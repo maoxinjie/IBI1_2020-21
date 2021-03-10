@@ -1,10 +1,8 @@
 a=1
 b=1
-c=a+b
-n=3
-while n<13:
+c=0
+for i in range(1,14):
  a=b
  b=c
  c=a+b
- n=n+1
-print(c)
+ print(c," " )
