@@ -5,4 +5,4 @@ for i in range(1,14):
  a=b
  b=c
  c=a+b
- print(c," " )
+ print(c)
