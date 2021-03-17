@@ -7,6 +7,7 @@ average_exon_length.sort()
 #sort the values for the average exon length across all 10 genes
 print(average_exon_length)
 import matplotlib.pyplot as plt
-plt.boxplot(average_exon_length)
+plt.title('the distribution of average exon length')
+plt.boxplot(average_exon_length, patch_artist = True, boxprops = {'color':'orangered','facecolor':'pink'})
 plt.show()
 
