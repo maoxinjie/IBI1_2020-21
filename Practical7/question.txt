@@ -1,0 +1,8 @@
+question: Are there places in the World where there have not yet been more than 10 total infections (as of 31 March)? If so, where are they?
+answer: line58-61
+discussion about the results: To find the places in the World where there have not yet been more than 10 total infections as of 31 March. I filter the countries that has its total cases no more than 10 at the date of 31 March, 2020.
+Then I filter the columns that show the name of countries and the total infections.
+To do this, I use the Boolean to show that if the date is '2020-03-31', then it is defined as True, which will be showed.
+Then I filter in the 'date', which shows all the data on 31 March, to define the locations where its total cases is no more than 10 as True.
+As a result, the 'countries' will show all the data with its total cases no more than 10 on 31 March.
+In the end, I filter the columns that show its locations and total cases.
