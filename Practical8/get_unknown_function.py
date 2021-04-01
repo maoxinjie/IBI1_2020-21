@@ -1,4 +1,5 @@
 import re
+a = open('unknown_function.fa', 'w')
 Saccharomyces = open('Saccharomyces_cerevisiae.R64-1-1.cdna.all.fa','r')
 genes = {'TTT':'F', 'TCT':'S', 'TAT':'Y', 'TGT':'C',
 'TTC':'F', 'TCC':'S', 'TAC':'Y', 'TGC':'C',
@@ -34,3 +35,4 @@ for line in Saccharomyces:
             cur_seq = cur_seq + genes[line[i:(i+3)]]
 for gene_name, cur_seq in protein_map.items():
     print(f'{gene_name:15}  {len(cur_seq)}\n{cur_seq}')
+    a.write(f'{gene_name:15}  {len(cur_seq)}\n{cur_seq}\n')
