@@ -36,3 +36,4 @@ for line in Saccharomyces:
 for gene_name, cur_seq in protein_map.items():
     print(f'{gene_name:15}  {len(cur_seq)}\n{cur_seq}')
     a.write(f'{gene_name:15}  {len(cur_seq)}\n{cur_seq}\n')
+a.close()
