@@ -5,7 +5,10 @@ d=abs(a-c)
 print(d)
 e=abs(a-b)
 print(e)
-print(d<=e)
+if d<=e:
+    print('d is not greater than e')
+else:
+    print('d is greater than e')
 Xs = (True, False)
 Ys = (True, False)
 for X in Xs:
