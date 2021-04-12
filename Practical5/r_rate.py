@@ -7,6 +7,6 @@
 n=84
 r=1.2
 for i in range(1,6):
- n=n*r
+ n=n*r+n
  print("In round ", i,", ","there is ",n," infected individuals.")
 
