@@ -1,0 +1,10 @@
+The results show that the alignment score between the sequence of human and mouse is 1091 and The percentage of 
+identical amino acids is approximately equals to 89.7%. The alignment score between the sequences of human and random
+is -250, the same as the alignment score between the sequences of mouse and random. The percentage of identical amino 
+acids between human and random sequence is approximately equals to 5.8% while between mouse and random sequence, it is
+approximately equals to 6.3%.
+
+From these data, we see that the alignment score between the sequence of human and mouse and the percentage of identical 
+amino acid is overall high. The reason of it may be that we human and mouse are all mammals. We have a lot in common limbs,
+ similar digestive systems, similar reproductive mechanisms and so on. In addition, the human, the mouse and many other 
+ mammals had a same ancestor in the history of evolution. 
