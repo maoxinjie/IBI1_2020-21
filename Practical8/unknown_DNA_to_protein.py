@@ -1,5 +1,6 @@
 import re
 a = input()
+# input the file
 b = open('output.fa', 'w')
 A = open(a, 'r')
 genes = {'TTT':'F', 'TCT':'S', 'TAT':'Y', 'TGT':'C',
