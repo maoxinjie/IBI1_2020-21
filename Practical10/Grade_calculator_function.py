@@ -6,7 +6,7 @@ class Student(object):
         self.final_exam = final_exam * 0.3
     def grade(self):
         return (self.name, (self.code_portfolio + self.poster_resentation + self.final_exam))
-
+# define the final grade according to the ratio
 name = input ('student name: ')
 code = input ('the grade of code portfolio: ')
 poster = input('the grade of poster resentation: ')
