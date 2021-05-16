@@ -69,13 +69,14 @@ blosum62 = {
     ('Z', 'N'): 0, ('X', 'A'): 0, ('B', 'R'): -1, ('B', 'N'): 3,
     ('F', 'D'): -3, ('X', 'Y'): -1, ('Z', 'R'): 0, ('F', 'H'): -1,
     ('B', 'F'): -3, ('F', 'L'): 0, ('X', 'Q'): -1, ('B', 'B'): 4 }
+# input the blosum62
 human =	open('SOD2_human.fa')
 mouse = open('SOD2_mouse.fa')
 random = open('RandomSeq.fa')
 human_mouse = 0
 human_random = 0
 mouse_random = 0
-
+# set initial variable as zero
 
 for line in human:
     if not (line.startswith('>')):
@@ -97,7 +98,9 @@ for	i in range(len(seq_h)):
         score1 = score1 + blosum62[seq_h[i], seq_m[i]]
     elif (seq_m[i], seq_h[i]) in blosum62:
         score1 += blosum62[seq_m[i], seq_h[i]]
+# calculate the final score
 print (1- human_mouse/len(seq_h))
+# calculate the difference
 print (score1)
 for	i in range(len(seq_h)): 
     if	seq_h[i]!=seq_r[i]:		
