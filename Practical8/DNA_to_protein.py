@@ -15,7 +15,9 @@ genes = {'TTT':'F', 'TCT':'S', 'TAT':'Y', 'TGT':'C',
 'GTC':'V', 'GCC':'A', 'GAC':'D', 'GGC':'G',
 'GTA':'V', 'GCA':'A', 'GAA':'E', 'GGA':'G',
 'GTG':'V', 'GCG':'A', 'GAG':'E', 'GGG':'G',}
+# input the dictionary
 protein = ''
 for i in range(0, len(seq), 3):
     protein = protein + genes[seq[i:(i+3)]]
+    # ensure 3 codons to translate into a protein
 print(protein)
