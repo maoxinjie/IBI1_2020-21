@@ -40,5 +40,6 @@ for line in A:
             cur_seq = cur_seq + genes[line[i:(i+3)]]
 for gene_name, cur_seq in protein_map.items():
     print(f'{gene_name:15}  {len(cur_seq)}\n{cur_seq}')
+    # set the space value into 15
     b.write(f'{gene_name:15}  {len(cur_seq)}\n{cur_seq}\n')
 b.close()
