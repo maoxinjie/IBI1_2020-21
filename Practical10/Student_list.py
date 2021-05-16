@@ -6,7 +6,7 @@ class Student(object):
         return self.full_name + ': ' + self.undergraduate_programme
 example = Student('Mao Xinjie', 'BMI')
 print(example.stulist())
-
+# define the student list
 import re
 def stud(data, name, programme):
     data.append(Student(name, programme))
@@ -23,3 +23,4 @@ for i in Record:
     print(n,'. ', i)
     n = n + 1
     print(i.stulist())
+# add all the students into a list
