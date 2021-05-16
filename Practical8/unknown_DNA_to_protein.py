@@ -32,6 +32,7 @@ for line in A:
             protein_map[gene_name] = cur_seq
         recording = 'unknown function' in line
         gene_name = re.findall(r'gene:(\S+)', line)[0]
+        # find the name of the gene in the line
         cur_seq = ""
     elif recording:
         for i in range(0, len(line)-1, 3):
