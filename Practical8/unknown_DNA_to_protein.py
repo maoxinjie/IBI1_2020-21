@@ -19,6 +19,7 @@ genes = {'TTT':'F', 'TCT':'S', 'TAT':'Y', 'TGT':'C',
 'GTC':'V', 'GCC':'A', 'GAC':'D', 'GGC':'G',
 'GTA':'V', 'GCA':'A', 'GAA':'E', 'GGA':'G',
 'GTG':'V', 'GCG':'A', 'GAG':'E', 'GGG':'G',}
+# input the dictionary
 protein = ''
 recording = False
 protein_map = {}
@@ -26,6 +27,7 @@ cur_seq = ""
 gene_name = ""
 for line in A:
     if  line.startswith('>'):
+        # select the lines that start with the ">"
         if recording:
             protein_map[gene_name] = cur_seq
         recording = 'unknown function' in line
