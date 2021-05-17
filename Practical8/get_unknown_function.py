@@ -17,7 +17,7 @@ genes = {'TTT':'F', 'TCT':'S', 'TAT':'Y', 'TGT':'C',
 'GTC':'V', 'GCC':'A', 'GAC':'D', 'GGC':'G',
 'GTA':'V', 'GCA':'A', 'GAA':'E', 'GGA':'G',
 'GTG':'V', 'GCG':'A', 'GAG':'E', 'GGG':'G',}
-# input the dictiondary
+# input the dictionary
 protein = ''
 recording = False
 protein_map = {}
