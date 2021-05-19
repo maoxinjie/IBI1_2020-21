@@ -1,4 +1,5 @@
 import re
+# input the blosum62
 blosum62 = {
     ('W', 'F'): 1, ('L', 'R'): -2, ('S', 'P'): -1, ('V', 'T'): 0,
     ('Q', 'Q'): 5, ('N', 'A'): -2, ('Z', 'Y'): -2, ('W', 'R'): -3,
@@ -69,15 +70,19 @@ blosum62 = {
     ('Z', 'N'): 0, ('X', 'A'): 0, ('B', 'R'): -1, ('B', 'N'): 3,
     ('F', 'D'): -3, ('X', 'Y'): -1, ('Z', 'R'): 0, ('F', 'H'): -1,
     ('B', 'F'): -3, ('F', 'L'): 0, ('X', 'Q'): -1, ('B', 'B'): 4 }
-# input the blosum62
+
+
+# open the files
 human =	open('SOD2_human.fa')
 mouse = open('SOD2_mouse.fa')
 random = open('RandomSeq.fa')
+
+# set initial variable as zero
 human_mouse = 0
 human_random = 0
 mouse_random = 0
-# set initial variable as zero
 
+# extract the sequence
 for line in human:
     if not (line.startswith('>')):
         seq_h = line
@@ -92,12 +97,14 @@ score1 = 0
 score2 = 0
 score3 = 0
 for	i in range(len(seq_h)): 
+    # every time find a different sequence, add the difference value
     if seq_h[i]!=seq_m[i]:		
         human_mouse += 1
     if (seq_h[i], seq_m[i]) in blosum62:
         score1 = score1 + blosum62[seq_h[i], seq_m[i]]
     elif (seq_m[i], seq_h[i]) in blosum62:
         score1 += blosum62[seq_m[i], seq_h[i]]
+        
 # calculate the final score
 print (1- human_mouse/len(seq_h))
 # calculate the difference
